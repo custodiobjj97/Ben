@@ -1,0 +1,29 @@
+.accordionWrapper{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+.accordionWrapper .title-2{
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.accordionItem{
+ border: 1px solid #ccc;
+ padding:1.6rem;
+}
+
+.accordionItemHeading{
+    cursor: pointer;
+}
+.accordionItem .accordionItemContent{
+    opacity: 0;
+}
+.accordionItem .accordionItemContent.open{
+    opacity: 1;
+}
+.accordionItem p{
+    color: #111;
+    
+}

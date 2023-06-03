@@ -1,0 +1,33 @@
+.about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.about img{
+    width: 100%;
+}
+
+.about .about-text{
+    padding: 1.7rem;
+    text-align: right;
+}
+
+.about .about-text h1{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.about .about-text p{
+    color: #111;
+    font-size: 1.7rem;
+    line-height: 3rem;
+}
+
+@media (min-width:920px){
+  .about{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
