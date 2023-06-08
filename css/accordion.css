@@ -20,7 +20,7 @@
 .accordionItem .accordionItemContent{
     opacity: 0;
 }
-.accordionItem .accordionItemContent.open{
+.accordionItem.open .accordionItemContent{
     opacity: 1;
 }
 .accordionItem p{
