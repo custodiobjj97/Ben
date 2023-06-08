@@ -19,6 +19,7 @@
 }
 .accordionItem .accordionItemContent{
     opacity: 0;
+    transition:.7s;
 }
 .accordionItem.open .accordionItemContent{
     opacity: 1;
