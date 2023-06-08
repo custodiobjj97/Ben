@@ -30,48 +30,12 @@ function initMenuMobile() {
 initMenuMobile()
 
 function initAccordion() {
-    const $title1 = document.getElementById('title-1')
-    $title1.addEventListener('click', ()=> {
-        document.getElementById('content-1').classList.add('open')
-        document.getElementById('content-2').classList.remove('open')
-        document.getElementById('content-3').classList.remove('open')
-        document.getElementById('content-4').classList.remove('open')
-        document.getElementById('content-5').classList.remove('open')
-    })
-
-    const $title2 = document.getElementById('title-2')
-    $title2.addEventListener('click', () => {
-        document.getElementById('content-2').classList.add('open')
-        document.getElementById('content-1').classList.remove('open')
-        document.getElementById('content-3').classList.remove('open')
-        document.getElementById('content-4').classList.remove('open')
-        document.getElementById('content-5').classList.remove('open')
-    })
-    const $title3 = document.getElementById('title-3')
-    $title3.addEventListener('click', () => {
-        document.getElementById('content-3').classList.add('open')
-        document.getElementById('content-2').classList.remove('open')
-        document.getElementById('content-1').classList.remove('open')
-        document.getElementById('content-4').classList.remove('open')
-        document.getElementById('content-5').classList.remove('open')
-    })
-
-    const $title4 = document.getElementById('title-4')
-    $title4.addEventListener('click', () => {
-        document.getElementById('content-4').classList.add('open')
-        document.getElementById('content-2').classList.remove('open')
-        document.getElementById('content-1').classList.remove('open')
-        document.getElementById('content-3').classList.remove('open')
-        document.getElementById('content-5').classList.remove('open')
-    })
-    const $title5 = document.getElementById('title-5')
-    $title5.addEventListener('click', () => {
-        document.getElementById('content-5').classList.add('open')
-        document.getElementById('content-2').classList.remove('open')
-        document.getElementById('content-1').classList.remove('open')
-        document.getElementById('content-3').classList.remove('open')
-        document.getElementById('content-4').classList.remove('open')
-    })
+    const $accordion =document.querySelectorAll('.accordionItem')
+    for(let i=0;i< $accordion.length;i++){
+         $accordion[i].addEventListener('click',function(){
+             this.classList.toggle('open')
+         })
+    }
 }
 
 initAccordion()
